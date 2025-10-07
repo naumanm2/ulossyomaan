@@ -79,14 +79,14 @@ export default function ChatPage() {
   return (
     <div className="flex flex-col h-screen mx-auto">
       <div className="flex items-start justify-between px-4 pt-6 pb-4 fixed w-full overflow-visible bg-gradient-to-b from-white to-transparent">
-        <button className="flex flex-col items-center gap-1 text-foreground">
+        {/* <button className="flex flex-col items-center gap-1 text-foreground">
           <Menu className="w-8 h-8" strokeWidth={2.5} />
           <span className="text-xs font-bold tracking-wide">MENU</span>
-        </button>
+        </button> */}
         <div className="flex-1 flex flex-col items-center -mt-2">
           <Image src="/muutos.png" alt="Logo" width={240} height={40} />
         </div>
-        <div className="w-8" /> {/* Spacer for centering */}
+        {/* <div className="w-8" /> Spacer for centering */}
       </div>
 
       {/* Messages Container */}
