@@ -90,7 +90,7 @@ export default function ChatPage() {
       </div>
 
       {/* Messages Container */}
-      <div className="flex-1 overflow-y-scroll min-h-min pb-24 px-4 py-6 space-y-6 max-w-5xl flex flex-col justify-end w-full mx-auto">
+      <div className="flex-1 overflow-y-scroll min-h-min pb-24 pt-40 px-4 py-6 space-y-6 max-w-5xl flex flex-col justify-end w-full mx-auto">
         {messages.length === 0 && (
           <div className="flex items-center justify-center h-full">
             <div className="text-center space-y-3">
