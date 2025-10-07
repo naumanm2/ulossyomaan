@@ -84,13 +84,14 @@ export default function ChatPage() {
           <span className="text-xs font-bold tracking-wide">MENU</span>
         </button> */}
         <div className="flex-1 flex flex-col items-center -mt-2">
-          <Image src="/muutos.png" alt="Logo" width={240} height={40} />
+          <Image src="/muutos.png" alt="Logo" width={240} height={40} loading="eager" />
         </div>
         {/* <div className="w-8" /> Spacer for centering */}
       </div>
 
       {/* Messages Container */}
-      <div className="flex-1 overflow-y-scroll min-h-min pb-24 pt-40 px-4 py-6 space-y-6 max-w-5xl flex flex-col justify-end w-full mx-auto">
+      
+      <div className="flex-1 min-h-min pb-20 mt-32 px-4 py-6 space-y-6 max-w-5xl flex flex-col justify-end w-full mx-auto">
         {messages.length === 0 && (
           <div className="flex items-center justify-center h-full">
             <div className="text-center space-y-3">
@@ -133,7 +134,7 @@ export default function ChatPage() {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="bg-white pb-6 pt-4 px-4 fixed w-full bottom-0 left-0 right-0">
+      <div className="bg-white pb-4 pt-4 px-4 fixed w-full bottom-0 left-0 right-0">
         <form
           onSubmit={handleSubmit}
           className="max-w-5xl flex flex-row mx-auto border-ring focus-within:ring-ring-active focus-within:ring-offset-background origin-left rounded-full bg-secondary outline-offset-2 transition-all duration-500 ease-in-out focus-within:ring-2 focus-within:ring-offset-2 pr-4 items-center gap-3"
