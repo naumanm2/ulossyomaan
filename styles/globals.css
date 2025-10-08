@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -122,4 +122,9 @@
   body {
     @apply text-foreground;
   }
+}
+
+.auto {
+  margin-left: max(4rem, auto);
+  margin-right: max(4rem, auto);
 }
