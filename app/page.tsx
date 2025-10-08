@@ -103,17 +103,25 @@ export default function ChatPage() {
         <div className="flex-1 h-full overflow-y-scroll pt-40 px-4 py-6 space-y-6 max-w-5xl w-full mx-auto">
           {messages.length === 0 && (
             <div className="flex items-center justify-center h-full">
-              <div className="text-center space-y-2">
+              <div className="text-center space-y-2 max-w-md">
                 <div className="">
-                  <strong className="text-foreground text-md">
-                    Hei! Olen AI-pohjainen sparrailukumppanisi.
-                  </strong>
+                  <p className="text-foreground text-md font-medium">
+                    Hei! <strong>Olen Ulos Syömään -GPT </strong>– työkalu, joka
+                    auttaa kehittämään suomalaista ruokailu- ja
+                    ravintolakulttuuria.
+                  </p>
                 </div>
                 <div className="">
                   <p className="text-muted-foreground text-md max-w-md">
-                    Autan sinua käyttämään Ulos syömään -strategiaa eduksesi.
-                    <br /> Kerro aluksi, kuka olet ja mitä teet niin osaan
-                    auttaa juuri sinulle relevanteissa asioissa.
+                    Kerro ensin{" "}
+                    <strong className="text-muted-foreground">kuka olet</strong>{" "}
+                    (ravintoloitsija, päättäjä, ravintolan asiakas) ja{" "}
+                    <strong className="text-muted-foreground">
+                      mihin kaipaat tukea
+                    </strong>{" "}
+                    – esimerkiksi oman alueen tai konseptin kehittämiseen,
+                    ideoihin, viestintään tai päätöksentekoon - niin pääsemme
+                    alkuun!"
                   </p>
                 </div>
                 {/* <ul className="list-disc list-inside space-y-0.5">
