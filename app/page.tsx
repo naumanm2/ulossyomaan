@@ -103,11 +103,30 @@ export default function ChatPage() {
         <div className="flex-1 h-full overflow-y-scroll pt-40 px-4 py-6 space-y-6 max-w-5xl w-full mx-auto">
           {messages.length === 0 && (
             <div className="flex items-center justify-center h-full">
-              <div className="text-center space-y-3">
-                <strong className="text-foreground text-lg">Hei!</strong>
-                <p className="text-muted-foreground text-lg">
-                  Kysy minulta mitä vaan.
-                </p>
+              <div className="text-center space-y-2">
+                <div className="">
+                  <strong className="text-foreground text-md">
+                    Hei! Olen AI-pohjainen sparrailukumppanisi.
+                  </strong>
+                </div>
+                <div className="">
+                  <p className="text-muted-foreground text-md max-w-md">
+                    Autan sinua käyttämään Ulos syömään -strategiaa eduksesi.
+                    <br /> Kerro aluksi, kuka olet ja mitä teet niin osaan
+                    auttaa juuri sinulle relevanteissa asioissa.
+                  </p>
+                </div>
+                {/* <ul className="list-disc list-inside space-y-0.5">
+                  <li className="text-muted-foreground">
+                    "Miten voin parantaa tiimityötäni?"
+                  </li>
+                  <li className="text-muted-foreground">
+                    "Miten käsitellä vaikeita asiakastilanteita?"
+                  </li>
+                  <li className="text-muted-foreground">
+                    "Miten voin kehittää johtamistaitojani?"
+                  </li>
+                </ul> */}
               </div>
             </div>
           )}
