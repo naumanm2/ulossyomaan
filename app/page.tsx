@@ -121,7 +121,7 @@ export default function ChatPage() {
                     </strong>{" "}
                     – esimerkiksi oman alueen tai konseptin kehittämiseen,
                     ideoihin, viestintään tai päätöksentekoon - niin pääsemme
-                    alkuun!"
+                    alkuun!
                   </p>
                 </div>
                 {/* <ul className="list-disc list-inside space-y-0.5">
